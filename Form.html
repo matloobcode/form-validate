@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="">
+
+    <div class="btn-toolbar bg-dark justify-content-between">
+       <div>
+        <button class="btn btn-dark">Matloob</button>
+       </div>
+
+       <div>
+        <button class="btn btn-dark">Home</button>
+        <button class="btn btn-dark">About</button>
+        <button class="btn btn-dark">Contact</button>
+       </div>
+
+       <div>
+        <button class="btn btn-dark"><span class="bi bi-search-heart"></span></button>
+        <button class="btn btn-dark"><span class="bi bi-person-bounding-box"></span></button>
+        <button class="btn btn-dark"><span class="bi bi-bag-heart"></span></button>
+       </div>
+    </div>
+    <form action="" class="w-50">
+        <h1 class="text-center">Register User</h1>
+        <div>
+            <label class="form-label" for="userName">User Name:</label>
+            <input class="form-control " type="text" placeholder="writ user name" autofocus>
+        </div>
+        <div>
+            <label class="form-label" for="password">Password:</label>
+            <input class="form-control " type="password" maxlength="" minlength="" required>
+        </div>
+
+        <!-- Inline Input-group -->
+       <div class="search-bar mt-2">
+        <label for="email validate">Validate Email or Moblie No.:</label>
+        <div class="input-group">
+            <select name="" class="input-group-text" id="">
+                <option value="both">All</option>
+                <option value="email">Email</option>
+                <option value="mobile">Mobile No.</option>
+            </select>
+            <input type="text" class="form-control">
+            <button class="btn btn-warning bi bi-search"></button>
+        </div>
+       </div>
+
+        <div>
+            <label for="email" class="form-label mt-2">Emali:</label>
+            <input type="email" class="form-control" placeholder="example@gmail.com">
+        </div>
+
+        <div>
+            <label for="contact no.">Contact Number:</label>
+            <input type="tel" class="form-control">
+        </div>
+
+        <div>
+            <label for="number" class="form-label mt-2">Roll No:</label>
+            <input type="number" class="form-control" min="1" max="100" step="1">
+        </div>
+
+        <div>
+            <label for="city" class="form-label mt-2">Select City:</label>
+            <select class="form-select " name="" id="">
+                <option value="">Select City</option>
+                <option value="">Hyd</option>
+                <option value="">Delhi</option>
+                <option value="">Kolkata</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="url" class="form-label mt-2">URL:</label>
+            <input type="url" class="form-control">
+        </div>
+
+        <div>
+            <label for="date" class="form-label mt-2">Date:</label>
+            <input type="date" class="form-control" value="2023-05-23" name="" min="2023-05-23" max="2023-06-29">
+        </div>
+
+        <div>
+            <label for="datetime-local" class="form-label mt-2">Datetime-local:</label>
+            <input type="datetime-local" class="form-control">
+        </div>
+
+        <div>
+            <label for="week" class="form-label mt-2">Week:</label>
+            <input type="week" class="form-control">
+        </div>
+
+        <div>
+            <label for="month" class="form-label mt-2">Month:</label>
+            <input type="month" class="form-control">
+        </div>
+
+        <div>
+            <label for="file" class="form-label mt-2">File:</label>
+            <input type="file" class="form-control" accept=".png,.jpg,.jpeg,.pdf,.dox" multiple>
+        </div>
+
+        <div>
+            <label for="checkbox" class=" mt-2">Check Courses:</label>
+            <ol>
+                <li><input type="checkbox" name="course" value="html" class="form-check-input"><span>HTML</span></li>
+                <li><input type="checkbox" name="course" value="css" class="form-check-input"><span>CSS</span></li>
+                <li><input type="checkbox" name="course" value="Javascript" checked class="form-check-input"><span>JavaScript</span></li>
+                <li><input type="checkbox" name="course" value="bootstrap" class="form-check-input"><span>Bootstrap</span></li>
+                <li><input type="checkbox" name="course" value="jquery" class="form-check-input"><span>jQuery</span></li>
+                <li><input type="checkbox" name="course" value="react.js" class="form-check-input"><span>Ract.js</span></li>
+                <li><input type="checkbox" name="course" value="node.js" class="form-check-input"><span>Node.js</span></li>
+                <li><input type="checkbox" name="course" value="express.js" class="form-check-input"><span>Express.js</span></li>
+                <li><input type="checkbox" name="course" value="Mongodb" class="form-check-input"><span>Mongodb</span></li>
+            </ol>
+        </div>
+
+        <div>
+            <label for="select" class="">Selct College:</label>
+            <select class="form-select" name="" id="">
+                <option value="select">Select</option>
+               <optgroup label="colleges in gaya">
+                <option value="MG">Mizaghalib</option>
+                <option value="MSY">MSY College</option>
+                <option selected value="GAY">Gaya College</option>
+               </optgroup>
+              <optgroup label="colleges in HYD">
+                <option value="mannu">Maulana Azad College</option>
+                <option disabled value="mannu">Maulana Azad College</option>
+                <option value="mannu">Maulana Azad College</option>
+              </optgroup>
+               
+            </select>
+        </div>
+
+        <div class="mt-2">
+            <label for="meter">Meter:</label>
+            <meter class="w-100" min="1" max="100" value="50" low="60" high="80"></meter>
+        </div>
+
+        <div>
+            <label for="progress">Installing...</label>
+            <progress class="w-100"></progress>
+        </div>
+
+        <div>
+            <label for="range" class="form-label mt-">Range:</label>
+           <div> <input type="range" max="1000" min="200" value="500" step="2" class="form-range "></div>
+        </div>
+
+
+        <div>
+            <label for="color" class="form-label">Choose Color:</label>
+            <input type="color" class="form-control-color m-1 w-25" value="#af00fb">
+        </div>
+
+        <div>
+            <label for="radio" class="form-label">Gender:</label>
+            <input type="radio" name="gender" value="male" class="ms-2">Male
+            <input type="radio" name="gender" value="female" class="ms-2">Female
+        </div>
+        
+        <div class="form-switch">
+            <input type="checkbox" class="form-check-input" checked> <label for="Subscribe" class="form-label">Subscribe</label>
+        </div>
+
+        <div>
+            <label for="feedback">Write Your Feedback:</label>
+            <textarea class="form-control" name="feedback" id="" cols="100" rows="3"></textarea>
+        </div>
+
+
+        <div>
+            <button type="button" class="btn btn-info w-100 mt-2 text-white">Reset</button>
+            <input type="submit" class="form-control mt-2  btn btn-primary" value="Register">
+        </div>
+
+        <div class="btn-group w-100 mt-2">
+            <button class="btn btn-outline-info text-danger"><span class="bi bi-chevron-left"></span> Previous</button>
+            <button class="btn btn-success">Update <span class="bi bi-pencil-square"></span></button>
+            <button class="btn btn-outline-info text-danger">Next <span class="bi bi-chevron-right"></span></button>
+        </div>
+    </form>
+    <script src="./server/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

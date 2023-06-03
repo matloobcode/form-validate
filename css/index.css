@@ -1,0 +1,17 @@
+form{
+    margin-left: 25%;
+    /* margin-top: 10%; */
+}
+ol{
+    list-style: none;
+    border: 2px solid maroon;
+    height: 100px;
+    overflow: auto;
+    border-radius: 5px;
+}
+.form-check-input:checked+span{
+    color: green;
+}
+.form-check-input+span{
+    color: red;
+}
