@@ -28,15 +28,15 @@
         <button class="btn btn-dark"><span class="bi bi-bag-heart"></span></button>
        </div>
     </div>
-    <form action="" class="w-50">
+    <form action="./public/success.html" class="w-50">
         <h1 class="text-center">Register User</h1>
         <div>
             <label class="form-label" for="userName">User Name:</label>
-            <input class="form-control " type="text" placeholder="writ user name" autofocus>
+            <input class="form-control " type="text" name="uName" placeholder="writ user name">
         </div>
         <div>
             <label class="form-label" for="password">Password:</label>
-            <input class="form-control " type="password" maxlength="" minlength="" required>
+            <input class="form-control " type="password" name="password" maxlength="" minlength="" required>
         </div>
 
         <!-- Inline Input-group -->
@@ -70,11 +70,13 @@
 
         <div>
             <label for="city" class="form-label mt-2">Select City:</label>
-            <select class="form-select " name="" id="">
-                <option value="">Select City</option>
-                <option value="">Hyd</option>
-                <option value="">Delhi</option>
-                <option value="">Kolkata</option>
+            <select class="form-select " name="selectCity" id="">
+                <option value="0">Select City</option>
+                <option value="1">Hyderabad</option>
+                <option value="2">Delhi</option>
+                <option value="3">Kolkata</option>
+                <option value="4">Chennai</option>
+                <option value="5">Banglore</option>
             </select>
         </div>
 
@@ -113,7 +115,7 @@
             <ol>
                 <li><input type="checkbox" name="course" value="html" class="form-check-input"><span>HTML</span></li>
                 <li><input type="checkbox" name="course" value="css" class="form-check-input"><span>CSS</span></li>
-                <li><input type="checkbox" name="course" value="Javascript" checked class="form-check-input"><span>JavaScript</span></li>
+                <li><input type="checkbox" name="course" value="Javascript" class="form-check-input"><span>JavaScript</span></li>
                 <li><input type="checkbox" name="course" value="bootstrap" class="form-check-input"><span>Bootstrap</span></li>
                 <li><input type="checkbox" name="course" value="jquery" class="form-check-input"><span>jQuery</span></li>
                 <li><input type="checkbox" name="course" value="react.js" class="form-check-input"><span>Ract.js</span></li>
@@ -125,7 +127,7 @@
 
         <div>
             <label for="select" class="">Selct College:</label>
-            <select class="form-select" name="" id="">
+            <select class="form-select" name="selectCollege" id="sCollege">
                 <option value="select">Select</option>
                <optgroup label="colleges in gaya">
                 <option value="MG">Mizaghalib</option>
@@ -137,7 +139,6 @@
                 <option disabled value="mannu">Maulana Azad College</option>
                 <option value="mannu">Maulana Azad College</option>
               </optgroup>
-               
             </select>
         </div>
 
@@ -169,7 +170,7 @@
         </div>
         
         <div class="form-switch">
-            <input type="checkbox" class="form-check-input" checked> <label for="Subscribe" class="form-label">Subscribe</label>
+            <input type="checkbox" name="radioCheckbox" class="form-check-input" id="toggle-switch"> <label for="Subscribe" class="form-label">Subscribe</label>
         </div>
 
         <div>
@@ -179,8 +180,8 @@
 
 
         <div>
-            <button type="button" class="btn btn-info w-100 mt-2 text-white">Reset</button>
-            <input type="submit" class="form-control mt-2  btn btn-primary" value="Register">
+            <input type="reset" class="btn btn-info w-100 mt-2 text-white" id="reSet" value="Reset" onclick="formReset()"></input>
+            <input type="submit" class="form-control mt-2  btn btn-primary" value="Register" onclick="return formValidate()">
         </div>
 
         <div class="btn-group w-100 mt-2">
